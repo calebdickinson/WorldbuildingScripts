@@ -1,0 +1,10 @@
+ &radmod_nl
+ NO3 = 1 
+ NECHAM6 = 0 
+ NECHAM = 1 
+ NSIMPLEALBEDO = 1 
+ NRADICE = 1 
+ DESYNC = 0.0 
+ NPBROADEN = 1 
+ CO2  =  599.8200539838047 
+ /END
