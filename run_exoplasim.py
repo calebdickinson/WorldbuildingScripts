@@ -2,7 +2,7 @@
 # python ~/WorldbuildingScripts/koppenpasta.py runs koppen maps
 # Input NetCDF filename or folder of files: myworld_t42_output/MOST_EXP
 # Set interpolation rescaling factor: 32 (32 x 128 = 4096)
-# Topography map filename: heightmap4096-2.png
+# Topography map filename: heightmapOfficial4096.png
 # Highest Map Elevation (m): 4572
 # Lowest Map Elevation (m): 0
 # Sea Level (m): 0
