@@ -1,4 +1,12 @@
 # Run with: python run_exoplasim.py
+# python ~/WorldbuildingScripts/koppenpasta.py runs koppen maps
+# Input NetCDF filename or folder of files: myworld_t42_output/MOST_EXP
+# Set interpolation rescaling factor: 32 (32 x 128 = 4096)
+# Topography map filename: heightmap4096-2.png
+# Highest Map Elevation (m): 4572
+# Lowest Map Elevation (m): 0
+# Sea Level (m): 0
+# Surface Gravity (m/s^2): 9.80665
 import exoplasim as exo
 
 model = exo.Model(resolution="T42",
@@ -8,8 +16,12 @@ model = exo.Model(resolution="T42",
                   precision=8,
                   crashtolerant=True)
 
-model.configure(topomap="myworldclimate_surf_0129.sra",
-                landmap="myworldclimate_surf_0172.sra",
+model.configure(topomap="koppen128_surf_0129.sra",
+                landmap="koppen128_surf_0172.sra",
+                pN2=0.7809,
+                pO2=0.2095,
+                pAr=0.0093,
+                pCO2=600e-6,
                 fixedorbit=True,
                 physicsfilter='gp|exp|sp',
                 wetsoil=True,
